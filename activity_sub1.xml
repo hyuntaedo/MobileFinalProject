@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Sub1">
+
+    <ImageView
+        android:textColor="@color/red"
+        android:id="@+id/imageView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="-52dp"
+        android:background="@drawable/bh" />
+
+    <Button
+        android:textColor="@color/red"
+        android:fontFamily="@font/gompang"
+        android:id="@+id/White"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:onClick="White"
+        android:text="White Phase" />
+
+    <Button
+        android:textColor="@color/red"
+        android:fontFamily="@font/gompang"
+        android:id="@+id/Black"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/White"
+        android:layout_centerInParent="true"
+        android:onClick="Black"
+        android:text="Black Phase" />
+
+
+</RelativeLayout>

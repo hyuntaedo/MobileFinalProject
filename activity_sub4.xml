@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Sub4">
+
+    <TextView
+        android:fontFamily="@font/brungo"
+        android:layout_below="@id/imageView2"
+        android:layout_above="@id/Confirm1_2"
+        android:id="@+id/count"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="15초 지나면 실패!"
+        android:textColor="@color/red"
+        android:textSize="20sp" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="0dp"
+        android:background="@drawable/stage2" />
+
+
+    <EditText
+        android:id="@+id/editText1_2"
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="답을 입력하시오" />
+
+    <Button
+        android:id="@+id/Confirm1_2"
+        android:onClick="Confirm1_2"
+        android:text="확인"
+        android:layout_above="@id/editText1_2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+</RelativeLayout>

@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/image"
+        android:background="@drawable/labyrinth"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <Button
+        android:textColor="@color/red"
+        android:fontFamily="@font/gompang"
+        android:id="@+id/종료"
+        android:layout_width="160dp"
+        android:layout_height="70dp"
+        android:layout_centerInParent="true"
+        android:onClick="onClickButton1"
+        android:text="종료" />
+
+    <Button
+        android:textColor="@color/red"
+        android:fontFamily="@font/gompang"
+        android:id="@+id/시작"
+        android:layout_width="160dp"
+        android:layout_height="70dp"
+        android:layout_above="@id/종료"
+        android:layout_centerInParent="true"
+        android:onClick="onClickButton2"
+        android:text="시작" />
+
+
+</RelativeLayout>
